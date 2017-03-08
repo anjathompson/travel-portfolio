@@ -1,8 +1,26 @@
+
+/*CSS Reset*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+/*table of contents
+
+Universal
+Typography
+Header
+Portfolio
+About me
+Contact
+
+*/
+
+/*Universal*/
+
 
 /*Typography*/
 
@@ -19,3 +37,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/*Header*/
+
+/*Portfolio*/
+
+/*About me*/
+
+/*Contact*/

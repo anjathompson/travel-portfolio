@@ -5,7 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+  border: 1px solid grey;
+  }
 
 
 /*table of contents
@@ -29,7 +30,7 @@ html {
 }
 
 body {
-  font-family: cursive;
+  font-family: 'Raleway Dots';
   font-size: 2rem;
   color: #333;
 
@@ -38,7 +39,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2, h3, h4, h5, h6{
+  text-align: center;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  margin-bottom: 4vh;
+}
+
+
 /*Header*/
+
+.top-banner {
+  background-image: url("../images/giphy.gif");
+  min-height: 100vh;
+  background-size: cover;
+}
 
 /*Portfolio*/
 

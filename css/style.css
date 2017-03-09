@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  font-family: 'Raleway Dots';
+  font-family: 'Raleway';
   font-size: 2rem;
   color: #333;
 
@@ -54,6 +54,11 @@ h2{
 
 /*Header*/
 
+  header {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+   }
 
 .hero-section {
   min-height: 100vh;
@@ -69,8 +74,8 @@ h2{
 .grey-box {
   top: 0;
   left: 0;
-  height: 100%;
-  width: 50%;
+  height: 100vh;
+  width: 50vw;
   background-color: #ddd;
 }
 
@@ -79,24 +84,81 @@ h2{
   background-position: center, center;
   position:absolute;
   top: 10vh;
+  bottom: 10vh;
   right: 10vh;
   width: 70vw;
   height: 80vh;
+  border-color: white;
+  border-spacing: 40px;
+  border-width: medium;
 }
 
 .hero-text {
   position:absolute;
-  top: 50%;
-  left: 10%;
+  top: 35vh;
+  left: 5%;
   width: 40vw;
   height: 10vh;
 }
 
 /*Portfolio*/
 
+.portfolio-images {
+
+  display: flex;
+
+}
+
+.portfolio-image {
+  display: block;
+  background-size: cover;
+  width: 33.3%;
+  height: 20rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  font-family: 'bitter';
+  text-align: center;
 
 }
 
 /*About me*/
 
+
 /*Contact*/
+
+form {
+  padding: 0 20%;
+
+}
+
+input, textarea {
+
+  background-color: white;
+  width: 100%;
+  border: 2px solid black;
+
+
+}
+
+input {
+
+  line-height: 2;
+
+}
+
+textarea {
+
+  line-height: 1.5;
+  min-height: 25rem;
+  margin-bottom: 1rem;
+
+}
+
+
+.center-input {
+
+  width: 96%;
+  margin: 0 2%;
+
+}

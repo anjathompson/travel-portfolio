@@ -54,13 +54,48 @@ h2{
 
 /*Header*/
 
-.top-banner {
-  background-image: url("../images/giphy.gif");
+
+.hero-section {
   min-height: 100vh;
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 5rem;
+}
+
+.grey-box {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #ddd;
+}
+
+.hero-image {
   background-size: cover;
+  background-position: center, center;
+  position:absolute;
+  top: 10vh;
+  right: 10vh;
+  width: 70vw;
+  height: 80vh;
+}
+
+.hero-text {
+  position:absolute;
+  top: 50%;
+  left: 10%;
+  width: 40vw;
+  height: 10vh;
 }
 
 /*Portfolio*/
+
+
+}
 
 /*About me*/
 

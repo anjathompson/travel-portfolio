@@ -246,3 +246,44 @@ textarea {
   margin: 0 2%;
 
 }
+
+/*Country sites, Thailand*/
+
+.thailand-text {
+
+  text-align: center;
+  color: black;
+
+}
+
+.thailand-images {
+
+    display: flex;
+
+  }
+
+  .thailand-image {
+
+    display: block;
+    padding: 1%;
+    width: 25%;
+    height: 20rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    text-align: center center;
+  }
+
+  .thailand-image:hover {
+
+    filter: grayscale(0);
+
+  }
+
+  .thailand-content {
+
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  }

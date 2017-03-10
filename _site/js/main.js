@@ -8,8 +8,7 @@ $(document).ready(function() {
 
   // options
 
-  itemSelector: '.portfolio-image',
-  layoutMode: 'fitRows'
+  itemSelector: '.portfolio-image'
   });
 
 

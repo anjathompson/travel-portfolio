@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid grey;
+  /*border: 1px solid grey;*/
   }
 
 
@@ -28,9 +28,9 @@ html {
 }
 
 body {
-  font-family: 'Raleway';
+  font-family: 'Raleway Dots';
   font-size: 2rem;
-  color: #333;
+  color: black;
 
   /*Makes font smoother*/
   -webkit-font-smoothing: antialiased;
@@ -70,7 +70,7 @@ header {
  nav {
    height: 3rem;
    line-height: 3rem;
-   background-color: rgba(2, 0, 0, 0.5);
+   /*background-color: rgba(2, 0, 0, 0.5);*/
    display: flex;
    justify-content: center;
    border-bottom: 1px solid transparent;
@@ -89,9 +89,9 @@ header {
  }
 
  nav a:hover{
-   color: white;
+   color: #45A9E6;
    background-color: transparent;
-   border-bottom-color: white;
+   border-bottom-color: #45A9E6;
 
  }
 
@@ -149,8 +149,8 @@ header {
 
 .portfolio-image {
   display: block;
-  background-size: cover;
-  width: 33.3%;
+  padding: 1%;
+  width: 25%;
   height: 20rem;
   text-decoration: none;
   font-size: 2rem;
@@ -166,6 +166,22 @@ header {
   filter: grayscale(0);
 
 }
+
+.portfolio-content {
+
+background-size: cover;
+height: 100%;
+width: 100%;
+
+}
+
+
+.portfolio-image.tall-image { height: 40rem; }
+
+
+.portfolio-image.large-image { width: 50%; }
+
+
 
 h3 {
 

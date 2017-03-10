@@ -136,6 +136,7 @@ header {
   left: 2vw;
   width: 30vw;
   height: 15vh;
+  font-family: 'Raleway Dots'
 }
 
 /*Portfolio*/
@@ -165,23 +166,29 @@ header {
   filter: grayscale(0);
 
 }
+
 h3 {
 
   padding: 15vh;
 
 }
 
+
 /*About me*/
+
+
 .about-image {
   background-image: url('/images/about_image.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
+  border: 50px solid white ;
 }
 
 .about-text{
 
   padding: 2%;
+  padding-top: 10%;
 
 }
 

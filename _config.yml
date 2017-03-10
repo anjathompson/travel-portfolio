@@ -1,0 +1,4 @@
+collections:
+  country:
+    output: true
+    permalink: /country/:path/

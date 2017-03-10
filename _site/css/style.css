@@ -57,11 +57,46 @@ section {
 }
 /*Header*/
 
-  header {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-   }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  border: 1px black;
+ }
+
+ nav {
+   height: 3rem;
+   line-height: 3rem;
+   background-color: rgba(2, 0, 0, 0.5);
+   display: flex;
+   justify-content: center;
+   border-bottom: 1px solid transparent;
+
+ }
+
+ nav a{
+   display: block;
+   color: black;
+   background-color: transparent;
+   padding: 0 1.5rem;
+   text-decoration: none;
+   border-bottom: 1px solid transparent;
+
+   transition: all 0.3s ease;
+ }
+
+ nav a:hover{
+   color: white;
+   background-color: transparent;
+   border-bottom-color: white;
+
+ }
+
+
+/*Hero Section*/
 
 .hero-section {
   min-height: 100vh;
@@ -78,30 +113,29 @@ section {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 50vw;
+  width: 60vw;
   background-color: #ddd;
+  border-color: white;
 }
 
 .hero-image {
   background-size: cover;
   background-position: center, center;
   position:absolute;
-  top: 10vh;
-  bottom: 10vh;
+  top: 20vh;
+  bottom: 20vh;
   right: 10vh;
-  width: 70vw;
+  width: 60vw;
   height: 80vh;
-  border-color: white;
-  border-spacing: 40px;
-  border-width: medium;
+  border: 1rem solid white;
 }
 
 .hero-text {
   position:absolute;
-  top: 35vh;
-  left: 5%;
-  width: 40vw;
-  height: 10vh;
+  top: 50vh;
+  left: 2vw;
+  width: 30vw;
+  height: 15vh;
 }
 
 /*Portfolio*/
@@ -120,12 +154,30 @@ section {
   text-decoration: none;
   font-size: 2rem;
   color: white;
-  font-family: 'bitter';
-  text-align: center;
+  font-family: 'Raleway Dots';
+  text-align: center center;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.portfolio-image:hover {
+
+  filter: grayscale(0);
+
+}
+h3 {
+
+  padding: 15vh;
 
 }
 
 /*About me*/
+.about-image {
+  background-image: url('/images/about_image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 
 .about-text{
 
@@ -138,6 +190,7 @@ section {
 form {
 
   padding: 0 20%;
+  text-align: center;
 
 }
 

@@ -62,15 +62,22 @@ h2 {
 
 .image-max-width {
 
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
 
 }
 
 .max-width-default {
 
-  max-width: 60rem;
-  margin: 0 auto;
+  max-width: 90rem;
+  margin: 2 auto;
+
+}
+
+.padding-bottom-default {
+
+  padding-bottom: 5rem;
+  padding-top: 5rem;
 
 }
 .max-width-large {
@@ -252,7 +259,7 @@ header {
 
 h3 {
 
-  padding: 15vh;
+  padding: 5vh;
 
 }
 
@@ -349,6 +356,7 @@ textarea {
 
 .title-text h1{
   font-size: 6rem;
+  font-weight: 200;
   margin-bottom: 1rem;
   margin-top: 0;
 }
@@ -356,6 +364,7 @@ textarea {
 .title-text h2{
   font-size: 2rem;
   text-transform: uppercase;
+  font-weight: 300;
 }
 
 

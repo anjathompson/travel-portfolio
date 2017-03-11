@@ -64,6 +64,20 @@ section {
   padding: 5% 0;
 
 }
+
+.image-max-width {
+
+  max-width: 100%;
+  height: auto;
+
+}
+
+.max-width-default {
+
+  max-width: 60rem;
+  margin: 0 auto;
+
+}
 /*Header*/
 
 header {
@@ -164,7 +178,7 @@ header {
   text-decoration: none;
   font-size: 2rem;
   color: white;
-  font-family: 'Raleway Dots';
+  font-family: 'Raleway';
   text-align: center center;
   filter: grayscale(100%);
   transition: all 0.3s ease;
@@ -269,6 +283,36 @@ textarea {
 }
 
 /*Country sites, Thailand*/
+
+
+.title-image{
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+
+
+}
+
+.title-text{
+  text-align: center;
+  color: white;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -60px;
+}
+
+.title-text h1{
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.title-text h2{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 
 .thailand-text {
 

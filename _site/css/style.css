@@ -28,7 +28,8 @@ html {
 }
 
 body {
-  font-family: 'Raleway Dots';
+  font-family: 'Raleway';
+  font-weight: 100;
   font-size: 2rem;
   color: black;
 
@@ -37,9 +38,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, {
   text-align: center;
   margin-bottom: 5%;
+}
+
+
+h3, h4, h5, h6{
+  text-align: center;
+  margin-bottom: 5%;
+  font-family: 'Raleway';
+  font-weight: 100;
 }
 
 h1{
@@ -151,7 +160,7 @@ header {
   display: block;
   padding: 1%;
   width: 25%;
-  height: 20rem;
+  height: 30rem;
   text-decoration: none;
   font-size: 2rem;
   color: white;
@@ -169,14 +178,15 @@ header {
 
 .portfolio-content {
 
-background-size: cover;
-height: 100%;
-width: 100%;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
 
 }
 
 
-.portfolio-image.tall-image { height: 40rem; }
+.portfolio-image.tall-image { height: 60rem; }
 
 
 .portfolio-image.large-image { width: 50%; }
@@ -215,13 +225,22 @@ form {
   padding: 0 20%;
   text-align: center;
 
+
+}
+
+.fa {
+
+  padding: 5vh;
+
 }
 
 input, textarea {
 
   background-color: white;
   width: 100%;
-  border: 2px solid black;
+  border: 1px solid gray;
+  font-family: 'Raleway';
+  font-weight: 200;
 
 
 }
@@ -234,9 +253,11 @@ input {
 
 textarea {
 
-  line-height: 1.5;
+  line-height: 1;
   min-height: 25rem;
   margin-bottom: 1rem;
+  font-family: 'Raleway';
+  font-weight: 200;
 
 }
 

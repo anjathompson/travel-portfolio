@@ -1,0 +1,18 @@
+---
+  layout: default
+  title: Countries
+---
+
+<div class="grid">
+
+  {% for country in site.country %}
+    {% if country.continent == "asia" %}
+
+      <a href="{{ country.url }}" class="col-4">
+        <h1>{{ country.name }}</h1>
+      </a>
+
+    {% endif %}
+  {% endfor %}
+
+</div>

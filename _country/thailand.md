@@ -1,5 +1,6 @@
 ---
 layout: country
+continent: europe
 name: Traveling Thailand
-top: Top 10 sites to see in Thailand
+top10: top 10
 ---

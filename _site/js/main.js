@@ -5,9 +5,9 @@ $(document).ready(function() {
     itemSelector: '.portfolio-image'
   });
 
-  $('.thailand-images').isotope({
+  $('.country-images').isotope({
     // options
-    itemSelector: '.thailand-image'
+    itemSelector: '.country-image'
   });
 
   // Get height to top from latest section

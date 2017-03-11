@@ -99,14 +99,8 @@ header {
  }
 
  nav {
-<<<<<<< HEAD
    height: 5rem;
    line-height: 5rem;
-=======
-   height: 3rem;
-   line-height: 3rem;
-   background-color: rgba(2, 0, 0, 0.5);
->>>>>>> 05ca3a030a7f5100266033e0c0a3d226d607690c
    display: flex;
    justify-content: space-between;
    border-bottom: 1px solid transparent;
@@ -118,39 +112,31 @@ header {
  }
 
  .nav-container {
-   display: flex;
+   display: none;
  }
+ .home .nav-container {
+    display: flex;
+  }
 
  nav a{
    display: block;
    color: #333;
    padding: 0 1.5rem;
    text-decoration: none;
-<<<<<<< HEAD
    font-weight: 300;
-=======
-   border: 1px solid transparent;
->>>>>>> 05ca3a030a7f5100266033e0c0a3d226d607690c
 
    transition: all 0.3s ease;
  }
 
  nav a:hover{
-<<<<<<< HEAD
    color: #316a86;
-=======
-   color: #45A9E6;
-   background-color: transparent;
-   border-color: #45A9E6;
-
->>>>>>> 05ca3a030a7f5100266033e0c0a3d226d607690c
  }
 
-.scrolled nav {
+.home .scrolled nav {
   padding-top: 0;
   background-color: rgba(255, 255, 255, 0.8);
 }
-.nav-logo {
+.home .nav-logo {
   opacity: 0;
 
   transition: all 0.3s ease;
@@ -384,6 +370,27 @@ textarea {
   font-weight: 300;
 }
 
+.title-button {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+  text-decoration: none;
+}
+.title-button h3 {
+  padding: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.title-button h3 .fa {
+  display: block;
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
 
 
 
@@ -441,3 +448,18 @@ textarea {
   width: 100%;
 
   }
+
+  .filters {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.filter-button {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 3rem;
+  cursor: pointer;
+  outline: none;
+}

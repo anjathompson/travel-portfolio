@@ -4,7 +4,7 @@
     <head>
 
   <meta charset="utf-8">
-  <title>Countries</title>
+  <title></title>
   <meta name="description" content="">
 
   <!-- Normalize CSS -->
@@ -24,7 +24,7 @@
 </head>
 
 
-  <body>
+  <body class="">
 
     <header>
   <nav>
@@ -34,7 +34,7 @@
 
     <div class="nav-container">
       <a href="#home">Home</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#explore">Explore</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
@@ -43,21 +43,55 @@
 
 
     <div class="main">
-      <div class="grid">
+      <section class="padding-default max-width-default">
 
-  
+  <h1 class="center">Asia</h1>
+
+  <div class="filters">
+
+    <button class="filter-button" data-filter="*">Show all</button>
+    <button class="filter-button" data-filter=".asia">Asia</button>
+    <button class="filter-button" data-filter=".europe">Europe</button>
+
+  </div>
+
+  <div class="portfolio-images">
+
     
 
-      <a href="/country/bali/" class="col-4">
-        <h1>Bali</h1>
-      </a>
+    <a class="portfolio-image asia" href="/country/bali/">
+
+      <div class="portfolio-content" style="background-image:url('/images/asia_image.jpg')">
+        <h3>Bali</h3>
+      </div>
+
+    </a>
 
     
-  
-    
-  
 
-</div>
+    <a class="portfolio-image europe" href="/country/england/">
+
+      <div class="portfolio-content" style="background-image:url('/images/europe_image.jpg')">
+        <h3>England</h3>
+      </div>
+
+    </a>
+
+    
+
+    <a class="portfolio-image asia" href="/country/thailand/">
+
+      <div class="portfolio-content" style="background-image:url('/images/asia_image.jpg')">
+        <h3>Thailand</h3>
+      </div>
+
+    </a>
+
+    
+
+  </div>
+
+</section>
 
     </div>
 

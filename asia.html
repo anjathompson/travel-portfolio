@@ -1,18 +1,33 @@
 ---
-  layout: default
-  title: Countries
+layout: default
 ---
 
-<div class="grid">
+<section class="padding-default max-width-default">
 
-  {% for country in site.country %}
-    {% if country.continent == "asia" %}
+  <h1 class="center">Asia</h1>
 
-      <a href="{{ country.url }}" class="col-4">
-        <h1>{{ country.name }}</h1>
-      </a>
+  <div class="filters">
 
-    {% endif %}
-  {% endfor %}
+    <button class="filter-button" data-filter="*">Show all</button>
+    <button class="filter-button" data-filter=".asia">Asia</button>
+    <button class="filter-button" data-filter=".europe">Europe</button>
 
-</div>
+  </div>
+
+  <div class="portfolio-images">
+
+    {% for country in site.country %}
+
+    <a class="portfolio-image {{ country.continent }}" href="{{ country.url }}">
+
+      <div class="portfolio-content" style="background-image:url('/images/{{ country.image }}')">
+        <h3>{{ country.name }}</h3>
+      </div>
+
+    </a>
+
+    {% endfor %}
+
+  </div>
+
+</section>

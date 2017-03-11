@@ -1,6 +1,6 @@
 ---
 layout: country
-continent: europe
-name: Traveling Thailand
-top10: top 10
+continent: asia
+name: Thailand
+image: asia_image.jpg
 ---

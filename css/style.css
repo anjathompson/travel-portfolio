@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*border: 1px solid grey;*/
+  border: 1px solid grey;
   }
 
 
@@ -290,8 +290,6 @@ textarea {
   background-position: center center;
   height: 100vh;
   position: relative;
-
-
 }
 
 .title-text{
@@ -313,6 +311,25 @@ textarea {
   font-size: 2rem;
   text-transform: uppercase;
 }
+
+
+
+
+/*Explore Country section*/
+
+
+.explore-text {
+
+  padding: 2%;
+  padding-top: 10%;
+  padding-left: 5%;
+  text-align: left;
+
+}
+
+
+/*Photo grid section*/
+
 
 .thailand-text {
 

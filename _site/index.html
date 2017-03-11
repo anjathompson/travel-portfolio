@@ -28,10 +28,16 @@
 
     <header>
   <nav>
-    <a href="#home">Home</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <div class="nav-logo">
+      <img class="logo" src="/images/logo.png" alt="Anja - Logo">
+    </div>
+
+    <div class="nav-container">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 </header>
 
@@ -39,10 +45,11 @@
     <div class="main">
       <!-- Hero Section  -->
 
-<section class="hero-section">
+<section id="home" class="hero-section">
   <div class="grey-box"></div>
   <div class="hero-image" style="background-image: url('/images/surf_image_title.jpg');"></div>
   <div class="hero-text">
+    <img class="logo" src="/images/logo.png" alt="Anja - Logo">
     <h2>ANJA THOMPSON</h2>
     <h1>Travel Photography</h1>
   </div>
@@ -50,71 +57,77 @@
 
 <!-- Portfolio Section -->
 
-<section id="portfolio" class="portfolio-images">
+<section id="portfolio" class="padding-default max-width-large">
 
-  <a class="portfolio-image small-image" href="#">
+  <h2 class="center">Explore continents</h2>
 
-    <div class="portfolio-content" style="background-image:url('/images/northamerica_image.jpg')">
-      <h3>North America</h3>
-    </div>
+  <div class="portfolio-images">
 
-  </a>
+    <a class="portfolio-image small-image" href="#">
 
-
-  <a class="portfolio-image tall-image" href="#">
-
-    <div class="portfolio-content" style="background-image:url('/images/europe_image.jpg')">
-      <h3>Europe</h3>
-    </div>
-
-  </a>
-
-  <a class="portfolio-image large-image" href="#">
-
-      <div class="portfolio-content" style="background-image:url('/images/africa_image.jpg')">
-      <h3>Africa</h3>
+      <div class="portfolio-content" style="background-image:url('/images/northamerica_image.jpg')">
+        <h3>North America</h3>
       </div>
 
-  </a>
+    </a>
 
-  <a class="portfolio-image small-image" href="#">
 
-    <div class="portfolio-content" style="background-image:url('/images/southamerica_image.jpg')">
-    <h3>South America</h3>
-    </div>
+    <a class="portfolio-image tall-image" href="#">
 
-  </a>
+      <div class="portfolio-content" style="background-image:url('/images/europe_image.jpg')">
+        <h3>Europe</h3>
+      </div>
 
-  <a class="portfolio-image" href="#">
+    </a>
 
-    <div class="portfolio-content" style="background-image:url('/images/asia_image.jpg')">
-    <h3>Asia</h3>
-    </div>
+    <a class="portfolio-image large-image" href="#">
 
-  </a>
+        <div class="portfolio-content" style="background-image:url('/images/africa_image.jpg')">
+        <h3>Africa</h3>
+        </div>
 
-  <a class="portfolio-image small-image" href="#">
+    </a>
 
-    <div class="portfolio-content" style="background-image:url('/images/australia_image.jpg')">
-    <h3>Australia</h3>
-    </div>
+    <a class="portfolio-image small-image" href="#">
 
-  </a>
+      <div class="portfolio-content" style="background-image:url('/images/southamerica_image.jpg')">
+      <h3>South America</h3>
+      </div>
+
+    </a>
+
+    <a class="portfolio-image" href="#">
+
+      <div class="portfolio-content" style="background-image:url('/images/asia_image.jpg')">
+      <h3>Asia</h3>
+      </div>
+
+    </a>
+
+    <a class="portfolio-image small-image" href="#">
+
+      <div class="portfolio-content" style="background-image:url('/images/australia_image.jpg')">
+      <h3>Australia</h3>
+      </div>
+
+    </a>
+
+  </div>
 
 </section>
 
 <!-- About me -->
 
-<section class="about-me">
+<section id="about" class="about-me">
 
   <div class="grid">
 
     <div class="col-6 about-image">
     </div>
 
-    <div class="col-6 about-text">
+    <div class="col-6 about-text center">
 
-      <h4>About me</h4>
+      <h2>About me</h2>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -127,13 +140,16 @@
 <!-- Instagram feed -->
 
 <!-- LightWidget WIDGET -->
+<section class="padding-default">
 
-<script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/fe42d77d149e5304aafc8f07b4a73b6b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+  <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/fe42d77d149e5304aafc8f07b4a73b6b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+</section>
 
 
 <!-- Contact me -->
 
-<section>
+<section id="contact">
 
   <form>
 

@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid grey;
+  /*border: 1px solid grey;*/
   }
 
 
@@ -38,31 +38,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, {
+h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  margin-bottom: 5%;
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 
-
-h3, h4, h5, h6{
-  text-align: center;
-  margin-bottom: 5%;
-  font-family: 'Raleway';
-  font-weight: 100;
-}
-
-h1{
+h1 {
   font-size: 2rem;
 }
 
-h2{
-  margin-bottom: 4vh;
+h2 {
+  text-transform: uppercase;
 }
 
-section {
+.center {
+  text-align: center;
+}
 
-  padding: 5% 0;
-
+.padding-default {
+  padding: 4rem 0;
 }
 
 .image-max-width {
@@ -75,6 +70,12 @@ section {
 .max-width-default {
 
   max-width: 60rem;
+  margin: 0 auto;
+
+}
+.max-width-large {
+
+  max-width: 120rem;
   margin: 0 auto;
 
 }
@@ -91,33 +92,54 @@ header {
  }
 
  nav {
-   height: 3rem;
-   line-height: 3rem;
-   /*background-color: rgba(2, 0, 0, 0.5);*/
+   height: 5rem;
+   line-height: 5rem;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    border-bottom: 1px solid transparent;
+   padding-right: 2rem;
+   padding-top: 2rem;
+   background-color: rgba(255, 255, 255, 0);
 
+   transition: all 0.3s ease;
+ }
+
+ .nav-container {
+   display: flex;
  }
 
  nav a{
    display: block;
-   color: black;
-   background-color: transparent;
+   color: #333;
    padding: 0 1.5rem;
    text-decoration: none;
-   border-bottom: 1px solid transparent;
+   font-weight: 300;
 
    transition: all 0.3s ease;
  }
 
  nav a:hover{
-   color: #45A9E6;
-   background-color: transparent;
-   border-bottom-color: #45A9E6;
-
+   color: #316a86;
  }
 
+.scrolled nav {
+  padding-top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.nav-logo {
+  opacity: 0;
+
+  transition: all 0.3s ease;
+}
+.nav-logo img {
+  height: 8rem;
+  width: auto;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.show-logo .nav-logo {
+  opacity: 1;
+}
 
 /*Hero Section*/
 
@@ -131,13 +153,17 @@ header {
   top: 50%;
   left: 5rem;
 }
+.hero-text h1,
+.hero-text h2 {
+  font-weight: 600;
+}
 
 .grey-box {
   top: 0;
   left: 0;
   height: 100vh;
   width: 60vw;
-  background-color: #ddd;
+  background-color: #e9f8ff;
   border-color: white;
 }
 
@@ -145,21 +171,25 @@ header {
   background-size: cover;
   background-position: center, center;
   position:absolute;
-  top: 20vh;
-  bottom: 20vh;
-  right: 10vh;
-  width: 60vw;
-  height: 80vh;
+  top: 12vh;
+  right: 5vh;
+  width: 64vw;
+  height: 72vh;
   border: 1rem solid white;
 }
 
 .hero-text {
-  position:absolute;
-  top: 50vh;
-  left: 2vw;
-  width: 30vw;
-  height: 15vh;
-  font-family: 'Raleway Dots'
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  text-align: center;
+  width: 33vw;
+  font-family: 'Raleway Dots';
+}
+
+.logo {
+  margin-bottom: 5rem;
+  max-width: 20rem;
 }
 
 /*Portfolio*/
@@ -196,7 +226,20 @@ header {
   background-position: center center;
   height: 100%;
   width: 100%;
+  position: relative;
 
+}
+
+.portfolio-content h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  color: #333;
 }
 
 
@@ -221,15 +264,18 @@ h3 {
   background-image: url('/images/about_image.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  border: 50px solid white ;
+  /*border: 50px solid white;*/
 }
 
 .about-text{
 
-  padding: 2%;
-  padding-top: 10%;
+  background-color: #e9f8ff;
+  padding: 5rem
 
+}
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #333;
 }
 
 /*Contact*/

@@ -332,9 +332,6 @@ footer {
 
 /* Style all font awesome icons */
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
     text-align: center;
     text-decoration: none;
 }
@@ -423,6 +420,10 @@ footer {
 .explore-text {
   text-align: left;
   background-color: #e9f8ff;
+}
+
+.explore-text-right {
+  text-align: right;
 }
 
 

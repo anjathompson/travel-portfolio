@@ -152,37 +152,21 @@
 
 <section id="contact">
 
-  <form>
 
-    <div class="center">
-      <h4>Get in touch</h4>
-    </div>
+<!-- Formspree -->
 
-    <div class="grid">
-    <div class="col-4">
-      <!-- <label for="name">Name</label> -->
-      <input id="name" type="text" name="name" placeholder="Enter name" required>
-    </div>
+<div class="center">
+  <h4>Get in touch</h4>
+</div>
 
-    <div class="col-4">
-      <!-- <label for="email">Email</label> -->
-      <input class="center-input" id="email" type="email" name="email" placeholder="Enter email" required>
-    </div>
-
-    <div class="col-4">
-      <!-- <label for="subject">Subject</label> -->
-      <input id="subject" type="text" name="subject" placeholder="Enter subject" required>
-    </div>
-
-    <div class="col-12">
-      <!-- <label for="message">Message</label> -->
-      <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-      <input type="submit" name="submit" value="Submit">
-    </div>
-    
-    </div>
-
-  </form>
+<form action="https://formspree.io/anja.thompson@gmail.com"
+      method="POST">
+    <input type="text" name="name" placeholder="Your name">
+    <input type="email" name="_replyto" placeholder="Your email">
+    <textarea name="message" placeholder="Your message"></textarea>
+    <input type="hidden" name="_subject" value="My site form" />
+    <input type="submit" value="Send">
+</form>
 
 </section>
 

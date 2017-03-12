@@ -6,21 +6,27 @@ class: home
 continent:
   - name: North America
     image: northamerica_image.jpg
+    url: /countries.html?continent=north-america
     size: small-image
   - name: Europe
     image: europe_image.jpg
+    url: /countries.html?continent=europe
     size: tall-image
   - name: Africa
     image: africa_image.jpg
+    url: /countries.html?continent=africa
     size: large-image
   - name: South America
     image: southamerica_image.jpg
+    url: /countries.html?continent=south-america
     size: small-image
   - name: Asia
     image: asia_image.jpg
+    url: /countries.html?continent=asia
     size: small-image
   - name: Australia
     image: australia_image.jpg
+    url: /countries.html?continent=australia
     size: small-image
 ---
 
@@ -46,7 +52,7 @@ continent:
 
     {% for continent in page.continent %}
 
-      <a class="portfolio-image {{ continent.size }}" href="#">
+      <a class="portfolio-image {{ continent.size }}" href="{{continent.url}}">
 
         <div class="portfolio-content" style="background-image:url('/images/{{ continent.image }}')">
           <h3>{{ continent.name }}</h3>

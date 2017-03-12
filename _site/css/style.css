@@ -479,10 +479,12 @@ footer {
   padding-bottom: 2rem;
   text-align: center;
 }
-.filter-button {
+  .filter-button grid {
+  
   border: none;
-  background-color: #333;
-  color: #fff;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
   height: 4rem;
   line-height: 4rem;
   padding: 0 3rem;

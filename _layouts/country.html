@@ -4,11 +4,11 @@ layout: default
 
 <!-- Header image -->
 
-<section class="title-image" style="background-image:url('/images/thailand_header_image.jpg')">
+<section class="title-image" style="background-image:url('/images/{{page.titleImage}}')">
 
   <div class="title-text">
-    <h1>EXPLORE THAILAND</h1>
-    <h2>Find out more about what to do in Thailand</h2>
+    <h1>{{page.name}}</h1>
+    <h2>{{page.subName}}</h2>
   </div>
 
   <a href="#explore" class="title-button">
@@ -28,17 +28,17 @@ layout: default
 <div class="grid max-width-default">
 
 
-  <h2 class="col-12">EXPLORE THAILAND</h2>
+  <h2 class="col-12">{{page.firstSection}}</h2>
 
     <div class="col-6">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>{{page.paragraphLeft}}</p>
 
     </div>
 
     <div class="col-6">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>{{page.paragraphRight}}</p>
 
     </div>
 
@@ -52,32 +52,32 @@ layout: default
 <section class="thailand-text padding-bottom-default">
 
   <h2>
-    {{page.top10}}
+    {{page.secondSection}}
   </h2>
 
 <div class="grid max-width-default explore-text-right">
   <div class="col-6">
-    <h3>1. Check out Bangkok</h3>
+    <h3>1. {{page.paragraphHeadingOne}}</h3>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      {{page.paragraphOne}}
     </p>
   </div>
 
   <div class="col-6 padding-bottom-default explore-text-right">
-    <img class="image-max-width" src="/images/thailand_image_3.jpg" alt="thailand image">
+    <img class="image-max-width" src="/images/{{page.secondSectionImageOne}}" alt="thailand image">
   </div>
 </div>
 
 <div class="grid max-width-default">
 
   <div class="col-6 padding-bottom-default">
-    <img class="image-max-width" src="/images/thailand_image_6.jpg" alt="thailand image">
+    <img class="image-max-width" src="/images/{{page.secondSectionImageTwo}}">
   </div>
 
   <div class="col-6">
-    <h3>2. Find a beach</h3>
+    <h3>2. {{page.paragraphHeadingTwo}}</h3>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      {{page.paragraphTwo}}
     </p>
   </div>
 </div>
@@ -85,14 +85,14 @@ layout: default
 <div class="grid max-width-default explore-text-right">
 
   <div class="col-6">
-    <h3>3. Take a boat ride</h3>
+    <h3>3. {{page.paragraphHeadingThree}}</h3>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      {{page.paragraphThree}}
     </p>
   </div>
 
   <div class="col-6 padding-bottom-default explore-text-right">
-    <img class="image-max-width" src="/images/thailand_image_9.jpg" alt="thailand image">
+    <img class="image-max-width" src="/images/{{page.secondSectionImageThree}}">
   </div>
 
 </div>
@@ -100,13 +100,13 @@ layout: default
 <div class="grid max-width-default">
 
   <div class="col-6 padding-bottom-default">
-    <img class="image-max-width" src="/images/thailand_image_12.jpg" alt="thailand image">
+    <img class="image-max-width" src="/images/{{page.secondSectionImageFour}}" alt="thailand image">
   </div>
 
   <div class="col-6">
-    <h3>4. Do nothing</h3>
+    <h3>4. {{page.paragraphHeadingFour}}</h3>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      {{page.paragraphFour}}
     </p>
 
   </div>
@@ -116,67 +116,18 @@ layout: default
 
 </section>
 
-<h2>Thailand Photos</h2>
-
+<h2>{{page.thirdSectionTitle}}</h2>
 
 <section class="country-images">
 
-    <a class="country-image" href="#">
+  {% for image in page.images %}
+  <a class="country-image" href="#">
 
-      <div class="country-content" style="background-image:url('/images/thailand_image_1.jpg')">
-      </div>
+    <div class="country-content" style="background-image:url('/images/{{image.name}}')">
+    </div>
 
-    </a>
-
-
-    <a class="country-image" href="#">
-
-      <div class="country-content" style="background-image:url('/images/thailand_image_7.jpg')">
-      </div>
-
-    </a>
-
-    <a class="country-image" href="#">
-
-        <div class="country-content" style="background-image:url('/images/thailand_image_3.jpg')">
-        </div>
-
-    </a>
-
-    <a class="country-image" href="#">
-
-      <div class="country-content" style="background-image:url('/images/thailand_image_4.jpg')">
-      </div>
-
-    </a>
-
-    <a class="country-image" href="#">
-
-      <div class="country-content" style="background-image:url('/images/thailand_image_5.jpg')">
-      </div>
-
-    </a>
-
-    <a class="country-image" href="#">
-
-      <div class="country-content" style="background-image:url('/images/thailand_image_6.jpg')">
-      </div>
-
-    </a>
-
-    <a class="country-image" href="#">
-
-      <div class="country-content" style="background-image:url('/images/thailand_image_8.jpg')">
-      </div>
-
-    </a>
-
-    <a class="country-image" href="#">
-
-      <div class="country-content" style="background-image:url('/images/thailand_image_9.jpg')">
-      </div>
-
-    </a>
+  </a>
+  {% endfor %}
 
   </section>
 

@@ -1,14 +1,41 @@
 $(document).ready(function() {
 
+  // If on the country page
+  if ($('body.countries')) {
+
+    // Function to get URL parameter
+    function getParameterByName(name, url) {
+      if (!url) {
+        url = window.location.href;
+      }
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    var countryFiltered = getParameterByName('country');
+
+    console.log(countryFiltered);
+
+    $('.all-country-images').isotope({
+      // options
+      itemSelector: '.all-country-image',
+      filter: '.' + countryFiltered
+    });
+
+    $('.filter-button').click(function() {
+      var filterValue = $(this).data('filter');
+      $('.all-country-images').isotope({ filter: filterValue });
+    });
+
+  }
+
   $('.portfolio-images').isotope({
     // options
     itemSelector: '.portfolio-image'
-  });
-
-  $('.filter-button').click(function() {
-    var filterValue = $(this).data('filter');
-    console.log(filterValue);
-    $('.portfolio-images').isotope({ filter: filterValue });
   });
 
   $('.country-images').isotope({

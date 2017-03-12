@@ -52,7 +52,6 @@ h2 {
   text-transform: uppercase;
 }
 
-
 .center {
   text-align: center;
 }
@@ -115,8 +114,11 @@ header {
  }
 
  .nav-container {
-   display: flex;
+   display: none;
  }
+ .home .nav-container {
+    display: flex;
+  }
 
  nav a{
    display: block;
@@ -132,16 +134,16 @@ header {
    color: #316a86;
  }
 
-.scrolled nav {
+.home .scrolled nav {
   padding-top: 0;
   background-color: rgba(255, 255, 255, 0.8);
 }
-
 .nav-logo {
-
+  text-decoration: none;
+}
+.home .nav-logo {
   opacity: 0;
   transition: all 0.3s ease;
-
 }
 
 .nav-logo img {
@@ -211,11 +213,13 @@ header {
 
 /*Portfolio*/
 
-.portfolio-images {
+.portfolio-images,
+.all-country-images {
   display: flex;
 }
 
-.portfolio-image {
+.portfolio-image,
+.all-country-image {
   display: block;
   padding: 1%;
   width: 25%;
@@ -229,7 +233,8 @@ header {
   transition: all 0.3s ease;
 }
 
-.portfolio-image:hover {
+.portfolio-image:hover,
+.all-country-image:hover {
   filter: grayscale(0);
 }
 
@@ -322,16 +327,6 @@ textarea {
 .center-input {
   width: 96%;
   margin: 0 2%;
-}
-
-
-/*Footer section*/
-
-footer {
-
-
-
-
 }
 
 /*Country sites*/
@@ -438,3 +433,18 @@ footer {
   width: 100%;
 
   }
+
+  .filters {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.filter-button {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 3rem;
+  cursor: pointer;
+  outline: none;
+}

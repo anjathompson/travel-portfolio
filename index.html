@@ -3,6 +3,25 @@ layout: default
 title: Anja Thompson Travel Portfolio
 description: Example site description about anja site
 class: home
+continent:
+  - name: North America
+    image: northamerica_image.jpg
+    size: small-image
+  - name: Europe
+    image: europe_image.jpg
+    size: tall-image
+  - name: Africa
+    image: africa_image.jpg
+    size: large-image
+  - name: South America
+    image: southamerica_image.jpg
+    size: small-image
+  - name: Asia
+    image: asia_image.jpg
+    size: small-image
+  - name: Australia
+    image: australia_image.jpg
+    size: small-image
 ---
 
 <!-- Hero Section  -->
@@ -25,7 +44,19 @@ class: home
 
   <div class="portfolio-images">
 
-    <a class="portfolio-image small-image" href="#">
+    {% for continent in page.continent %}
+
+      <a class="portfolio-image {{ continent.size }}" href="#">
+
+        <div class="portfolio-content" style="background-image:url('/images/{{ continent.image }}')">
+          <h3>{{ continent.name }}</h3>
+        </div>
+
+      </a>
+
+    {% endfor %}
+
+    <!-- <a class="portfolio-image small-image" href="#">
 
       <div class="portfolio-content" style="background-image:url('/images/northamerica_image.jpg')">
         <h3>North America</h3>
@@ -72,7 +103,7 @@ class: home
       <h3>Australia</h3>
       </div>
 
-    </a>
+    </a> -->
 
   </div>
 

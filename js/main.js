@@ -16,14 +16,18 @@ $(document).ready(function() {
       return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
-    var countryFiltered = getParameterByName('country');
+    var continent = getParameterByName('continent');
 
-    console.log(countryFiltered);
+    var countryFiltered = '*';
+
+    if (continent !== null) {
+      var countryFiltered = '.' + continent;
+    }
 
     $('.all-country-images').isotope({
       // options
       itemSelector: '.all-country-image',
-      filter: '.' + countryFiltered
+      filter: countryFiltered
     });
 
     $('.filter-button').click(function() {

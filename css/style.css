@@ -379,10 +379,9 @@ textarea {
 /*Explore Country section*/
 
 .explore-text {
-  padding: 2%;
-  padding-top: 15%;
-  padding-left: 5%;
   text-align: left;
+  background-color: #e9f8ff;
+  
 }
 
 

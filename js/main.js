@@ -11,6 +11,11 @@ $(document).ready(function() {
     $('.portfolio-images').isotope({ filter: filterValue });
   });
 
+  $('.country-images').isotope({
+    // options
+    itemSelector: '.country-image'
+  });
+
   if ($('body.home')) {
 
   // Get height to top from latest section

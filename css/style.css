@@ -70,7 +70,7 @@ h2 {
 .max-width-default {
 
   max-width: 90rem;
-  margin: 2 auto;
+  margin: 0 auto;
 
 }
 
@@ -80,12 +80,14 @@ h2 {
   padding-top: 5rem;
 
 }
+
 .max-width-large {
 
   max-width: 120rem;
   margin: 0 auto;
 
 }
+
 /*Header*/
 
 header {
@@ -138,15 +140,18 @@ header {
 }
 .home .nav-logo {
   opacity: 0;
-
   transition: all 0.3s ease;
 }
+
 .nav-logo img {
+
   height: 8rem;
   width: auto;
   margin-left: 2rem;
   margin-top: 1rem;
+
 }
+
 .show-logo .nav-logo {
   opacity: 1;
 }
@@ -163,6 +168,7 @@ header {
   top: 50%;
   left: 5rem;
 }
+
 .hero-text h1,
 .hero-text h2 {
   font-weight: 600;
@@ -205,9 +211,7 @@ header {
 /*Portfolio*/
 
 .portfolio-images {
-
   display: flex;
-
 }
 
 .portfolio-image {
@@ -225,9 +229,7 @@ header {
 }
 
 .portfolio-image:hover {
-
   filter: grayscale(0);
-
 }
 
 .portfolio-content {
@@ -261,9 +263,7 @@ header {
 
 
 h3 {
-
   padding: 5vh;
-
 }
 
 
@@ -278,11 +278,10 @@ h3 {
 }
 
 .about-text{
-
   background-color: #e9f8ff;
   padding: 5rem
-
 }
+
 .about-text h2 {
   font-size: 2.5rem;
   color: #333;
@@ -291,55 +290,40 @@ h3 {
 /*Contact*/
 
 form {
-
   padding: 0 20%;
   text-align: center;
-
-
 }
 
 .fa {
-
   padding: 5vh;
-
 }
 
 input, textarea {
-
   background-color: white;
   width: 100%;
   border: 1px solid gray;
   font-family: 'Raleway';
   font-weight: 200;
-
-
 }
 
 input {
-
   line-height: 2;
-
 }
 
 textarea {
-
   line-height: 1;
   min-height: 25rem;
   margin-bottom: 1rem;
   font-family: 'Raleway';
   font-weight: 200;
-
 }
 
 .center-input {
-
   width: 96%;
   margin: 0 2%;
-
 }
 
-/*Country sites, Thailand*/
-
+/*Country sites*/
 
 .title-image{
   background-size: cover;
@@ -392,38 +376,33 @@ textarea {
   font-size: 2rem;
 }
 
-
-
 /*Explore Country section*/
 
-
 .explore-text {
-
   padding: 2%;
-  padding-top: 10%;
+  padding-top: 15%;
   padding-left: 5%;
   text-align: left;
-
 }
 
 
 /*Photo grid section*/
 
 
-.thailand-text {
+.country-text {
 
   text-align: center;
   color: black;
 
 }
 
-.thailand-images {
+.country-images {
 
     display: flex;
 
   }
 
-  .thailand-image {
+  .country-image {
 
     display: block;
     padding: 1%;
@@ -435,13 +414,13 @@ textarea {
     text-align: center center;
   }
 
-  .thailand-image:hover {
+  .country-image:hover {
 
     filter: grayscale(0);
 
   }
 
-  .thailand-content {
+  .country-content {
 
   background-size: cover;
   height: 100%;

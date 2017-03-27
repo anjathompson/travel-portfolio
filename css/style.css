@@ -296,12 +296,9 @@ h3 {
 /*Contact*/
 
 form {
-  padding: 0 20%;
+  padding: 0 30%;
+  padding-bottom: 10vh;
   text-align: center;
-}
-
-.fa {
-  padding: 5vh;
 }
 
 input, textarea {
@@ -319,7 +316,7 @@ input {
 textarea {
   line-height: 1;
   min-height: 25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-family: 'Raleway';
   font-weight: 200;
 }
@@ -333,13 +330,19 @@ textarea {
 
 footer {
   background-color: #e9f8ff;
-  line-height: 2;
+  line-height: 3;
 }
 
 /* Style all font awesome icons */
 .fa {
     text-align: center;
     text-decoration: none;
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+
 }
 
 /* Add a hover effect if you want */
@@ -480,7 +483,7 @@ footer {
   text-align: center;
 }
   .filter-button grid {
-  
+
   border: none;
   background-color: white;
   border: 1px solid black;

@@ -370,6 +370,17 @@ footer {
     color: white;
 }
 
+/*Countries site*/
+
+.filter-button {
+  color: #333;
+  padding: 0 1.5rem;
+  text-decoration: none;
+  font-weight: 300;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
 
 /*Country sites*/
 

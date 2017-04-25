@@ -295,6 +295,10 @@ h3 {
 
 /*Contact*/
 
+h4 {
+  padding-top: 5vh;
+}
+
 form {
   padding: 0 30%;
   padding-bottom: 10vh;

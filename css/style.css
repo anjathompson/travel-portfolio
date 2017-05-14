@@ -275,7 +275,6 @@ h3 {
 
 /*About me*/
 
-
 .about-image {
   background-image: url('/images/about_image.jpg');
   background-size: cover;
@@ -294,6 +293,7 @@ h3 {
 }
 
 /*Contact*/
+
 
 h4 {
   padding-top: 5vh;
@@ -319,7 +319,7 @@ input {
 
 textarea {
   line-height: 1;
-  min-height: 25rem;
+  min-height: 20rem;
   margin-bottom: 2rem;
   font-family: 'Raleway';
   font-weight: 200;
@@ -329,6 +329,7 @@ textarea {
   width: 96%;
   margin: 0 2%;
 }
+
 
 /*Footer section*/
 

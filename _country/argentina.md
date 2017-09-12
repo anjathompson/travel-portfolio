@@ -1,7 +1,7 @@
 ---
 layout: country
 continent: south-america
-name: Explore Argentina page under construction
+name: Explore Patagonia page under construction
 subName: Find out more about what to do in Thailand
 titleImage: southamerica_image.jpg
 
